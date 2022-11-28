@@ -16,12 +16,14 @@ Below's diagram shows the structure of how resources are installed and configure
     │   ├── Fronts (Fira, Nerd Font, etc)
     │   ├── GNU Tools
     │   ├── GPG Untils
-    ├── dotfiles
+    ├── Configuration files (i.e. dotfiles)
     │   ├── asdf (.tool_versions)
     │   ├── Git (.gitconfig, .gitignore)
+    │   ├── OSx Default
     │   ├── Spaceship (.spaceshiprc.zsh) # moved to .config
     │   └── Zsh (.zprofile, .zshrc)
-    └──
+    └── Directories
+       └── ~/code
 ```
 
 ## Getting started
