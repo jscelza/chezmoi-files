@@ -1,0 +1,5 @@
+Host gitlab.com
+    IdentityFile ~/.ssh/id_rsa.gitlab.personal
+
+Host gitlab.checkrhq.net
+    IdentityFile ~/.ssh/id_rsa.gitlab.checkr

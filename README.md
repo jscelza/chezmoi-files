@@ -8,7 +8,7 @@ Below's diagram shows the structure of how resources are installed and configure
     ├── asdf
     │   ├── K8s tools (kubectx, kubens)
     │   ├── Lanaguages (ruby, golang, python, node, etc)
-    │   ├── Tools (okteto, teleport, terraform, terragrunt)    
+    │   ├── Tools (okteto, teleport, terraform, terragrunt, vault)    
     │   ├── Utilies (jq, awscli, istioctl)
     ├── brew
     │   ├── CLI Not support by asdf
@@ -30,6 +30,8 @@ Below's diagram shows the structure of how resources are installed and configure
 
 ### Single Command Boot strapping
 Run the following to install `chezmoi` and set everything up in a single command
+
+> From a terminal
 ```bash
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://gitlab.com/jeffs-public/chezmoi-files
 ```
@@ -38,7 +40,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://gitlab.com/jeffs-pu
 > From a terminal
 
 1. Install from binary
-```
+```bash
 mkdir ~/bin && sh -c "$(curl -fsLS get.chezmoi.io)" -- -b ~/bin
 export PATH=~/bin:$PATH
 chezmoi update
