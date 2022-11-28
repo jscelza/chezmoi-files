@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "---- Start of ASDF setup ----"
+
 if [ -e $(which asdf) ]; then
   echo "asdf already installed"
 else
@@ -7,5 +9,13 @@ else
   git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 fi
 
-asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
 asdf plugin-add awscli https://github.com/MetricMike/asdf-awscli.git
+asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+asdf plugin-add istioctl https://github.com/virtualstaticvoid/asdf-istioctl.git
+asdf plugin-add jq https://github.com/AZMCode/asdf-jq.git
+asdf plugin-add kubectl https://github.com/asdf-community/asdf-kubectl.git
+asdf plugin add okteto https://github.com/BradenM/asdf-okteto.git
+asdf plugin-add python
+asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+
+echo "---- End of ASDF setup ----"
