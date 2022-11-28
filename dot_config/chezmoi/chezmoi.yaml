@@ -1,0 +1,7 @@
+diff:
+  exclude: []
+
+git:
+  autoCommit: false
+  autoPush: false
+

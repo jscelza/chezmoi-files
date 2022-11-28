@@ -11,5 +11,7 @@ tap "homebrew/cask"
 tap "buo/cask-upgrade"
 tap "homebrew/cask-fonts"
 
-brew "asdf"
+brew "coreutils"
 brew "mas"
+
+cask "iterm2"

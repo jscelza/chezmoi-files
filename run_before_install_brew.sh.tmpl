@@ -8,7 +8,6 @@ else
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-# Brewfile  hash: {{ include "./configs_darwin/Brewfile" | sha256sum }}
-brew bundle install -v --file {{ joinPath .chezmoi.sourceDir "./configs_darwin/Brewfile" | quote }}
+brew bundle install -v --no-lock --file {{ joinPath .chezmoi.sourceDir "Brewfile" | quote }}
 {{ end -}}
 
