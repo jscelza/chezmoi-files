@@ -1,4 +1,6 @@
 README.md
+chezmoi.yaml
+*swp
 
 # All private configuration files as to not clutter your home Directory
 configs_*
