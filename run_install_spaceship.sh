@@ -1,8 +1,10 @@
 #!/bin/sh
 
-echo "---- Start of Spaceship setup ----"
+gecho -e  "${TXT_BOLD}--- Start of Spaceship setup ----${TXT_CLEAR}"
 
-mkdir -p "$HOME/.zsh"
-git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git "$HOME/.zsh/spaceship"
+if [ ! -d "$HOME/.zsh/spaceship" ]; then
+    mkdir -p "$HOME/.zsh"
+    git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git "$HOME/.zsh/spaceship"
+fi 
 
-echo "---- End of Spaceship setup ----"
+gecho -e "${TXT_BOLD}---- End of Spaceship setup ----${TXT_CLEAR}"
