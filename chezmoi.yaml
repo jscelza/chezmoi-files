@@ -1,0 +1,4 @@
+git:
+  autoCommit = false
+  autoPush = false
+

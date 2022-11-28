@@ -1,0 +1,14 @@
+cask_args appdir: '/Applications'
+
+
+# Suggests Taken from 
+#   - https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f
+
+
+tap "homebrew/core"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "buo/cask-upgrade"
+tap "homebrew/cask-fonts"
+
+brew "mas"
