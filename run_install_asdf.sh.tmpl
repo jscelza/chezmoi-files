@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "---- Start of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"
+gecho -e "---- Start of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"
 
 if [ -e $(which asdf) ]; then
   echo "asdf already installed"
@@ -23,4 +23,6 @@ asdf plugin-add terraform https://github.com/asdf-community/asdf-hashicorp.git
 asdf plugin-add terraform-ls https://github.com/asdf-community/asdf-hashicorp.git
 asdf plugin-add terragrunt https://github.com/ohmer/asdf-terragrunt
 asdf plugin-add vault https://github.com/asdf-community/asdf-hashicorp.git
-echo "---- End of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"
+
+asdf install
+gecho -e "---- End of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"

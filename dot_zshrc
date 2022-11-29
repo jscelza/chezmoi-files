@@ -1,5 +1,11 @@
+# Shell Variables
+export PROJECTS="$HOME/Code"
+
+
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
+export EDITOR='vim'
+export VEDITOR='code'
 
 # Spaceship
 source "$HOME/.zsh/spaceship/spaceship.zsh"
@@ -16,6 +22,9 @@ autoload -Uz compinit && compinit
 
 # Addtional environment variables
 export PATH=~/bin:${PATH}loc
+
+# zsh style
+source $HOME/.zsh/completion.zsh
 
 ## Alias
 # git
