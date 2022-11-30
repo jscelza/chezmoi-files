@@ -8,7 +8,7 @@ Below's diagram shows the structure of how resources are installed and configure
     ├── asdf
     │   ├── K8s tools (kubectx, kubens)
     │   ├── Lanaguages (ruby, golang, python, node, etc)
-    │   ├── Tools (okteto, teleport, terraform, terragrunt, vault)    
+    │   ├── Tools (okteto, teleport, terraform, terragrunt, vault)
     │   ├── Utilies (jq, awscli, istioctl)
     ├── brew
     │   ├── CLI Not support by asdf
@@ -29,19 +29,32 @@ Below's diagram shows the structure of how resources are installed and configure
 ## Getting started
 
 ### Single Command Boot strapping
-Run the following to install `chezmoi` and set everything up in a single command
+Run the following to install of `chezmoi` and set everything up in a single command
 
 > From a terminal
 ```bash
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://gitlab.com/jeffs-public/chezmoi-files
 ```
 
-### From Scratch
-> From a terminal
+### From Scratch or Making changes
 
-1. Install from binary
+> From a terminal
+1. Fun below commands
 ```bash
 mkdir ~/bin && sh -c "$(curl -fsLS get.chezmoi.io)" -- -b ~/bin
 export PATH=~/bin:$PATH
 chezmoi update
 ``
+1. Update you respected .dotfiles and add files with `chezmoi add <file/dir name>`
+1. Check out your diff `chezmoi diff`
+1. Apply with `chezmoi apply`
+1. Commit your changes to git and push to the respositor
+
+## Reference
+
+* [ASDF Plugins](https://github.com/asdf-vm/asdf-plugins)
+* [ASDF Reference](https://asdf-vm.com/manage/core.html)
+* [Example alternative DotFile ](https://github.com/denysdovhan/dotfiles)
+* [Brew Bundle Brewfile Tips](https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f)
+* [Oh My Zsh](https://github.com/ohmyzsh)
+* [Spaceship Prompt Configuration](https://spaceship-prompt.sh/config/intro/)
