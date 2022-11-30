@@ -1,0 +1,62 @@
+{
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+      80,
+      120
+  ],
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "editor.tabCompletion": "on",
+  "explorer.confirmDelete": false,
+  "extensions.autoUpdate": true,
+  "files.associations": {
+      "*.tmpl": "gotemplate"
+  },
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "ruby.format": "rubocop",
+  "search.exclude": {
+      "**/bower_components": true,
+      "**/node_modules": true,
+      "/vendor": true
+  },
+  "search.showLineNumbers": true,
+  "search.useGlobalIgnoreFiles": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.allowChords": false,
+  "workbench.colorTheme": "Default Dark+",
+  "window.zoomLevel": -1,
+  "redhat.telemetry.enabled": false,
+  "yaml.customTags": [
+      "!And",
+      "!And sequence",
+      "!If",
+      "!If sequence",
+      "!Not",
+      "!Not sequence",
+      "!Equals",
+      "!Equals sequence",
+      "!Or",
+      "!Or sequence",
+      "!FindInMap",
+      "!FindInMap sequence",
+      "!Base64",
+      "!Join",
+      "!Join sequence",
+      "!Cidr",
+      "!Ref",
+      "!Sub",
+      "!Sub sequence",
+      "!GetAtt",
+      "!GetAZs",
+      "!ImportValue",
+      "!ImportValue sequence",
+      "!Select",
+      "!Select sequence",
+      "!Split",
+      "!Split sequence"
+  ],
+  "aws.telemetry": false
+}

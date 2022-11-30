@@ -1,9 +1,11 @@
 awscli latest
+fzf 0.35.1
 golang latest
 istioctl latest
 jq latest
-kubectl latest
-okteto latest
+kubectl 1.25.4
+kubectx 0.9.4
+okteto 2.9.1
 python 3.7.15 2.7.18
 ruby latest
-teleport-ent latest
+teleport-ent 10.3.3

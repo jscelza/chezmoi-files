@@ -1,0 +1,9 @@
+{
+	"contexts": {
+		"heimdallr.checkrhq.net-dev-us-eks": {
+			"name": "heimdallr.checkrhq.net-dev-us-eks",
+			"namespace": "default"
+		}
+	},
+	"current-context": "heimdallr.checkrhq.net-dev-us-eks"
+}

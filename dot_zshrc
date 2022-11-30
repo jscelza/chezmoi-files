@@ -23,6 +23,10 @@ autoload -Uz compinit && compinit
 # Addtional environment variables
 export PATH=~/bin:${PATH}loc
 
+# Teleport
+export TELEPORT_PROXY="heimdallr.checkrhq.net"
+export TELEPORT_AUTH="gitlab"
+
 # zsh style
 source $HOME/.zsh/completion.zsh
 
