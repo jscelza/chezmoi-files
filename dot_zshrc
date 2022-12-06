@@ -8,7 +8,7 @@ export EDITOR='vim'
 export VEDITOR='code'
 
 # Spaceship
-source "{$HOME}/.zsh/spaceship/spaceship.zsh"
+source "${HOME}/.zsh/spaceship/spaceship.zsh"
 fpath=("$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath)
 autoload -U promptinit; promptinit
 # prompt spaceship
@@ -30,3 +30,7 @@ export TELEPORT_AUTH="gitlab"
 # zsh
 source $HOME/.zsh/completion.zsh
 source $HOME/.zsh/alias.zsh
+
+
+# Post shell notification
+gecho -e "Run 'okteto context use' if you want to start using okteto"
