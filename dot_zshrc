@@ -1,6 +1,7 @@
+#!/bin/zsh
+
 # Shell Variables
 export PROJECTS="$HOME/Code"
-
 
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -23,6 +24,9 @@ autoload -Uz compinit && compinit
 # Addtional environment variables
 export PATH=${HOME}/bin:${PATH}
 
+# Sourcegraph
+export SRC_ENDPOINT="https://checkr.sourcegraph.com/"
+
 # Teleport
 export TELEPORT_PROXY="heimdallr.checkrhq.net"
 export TELEPORT_AUTH="gitlab"
@@ -31,6 +35,6 @@ export TELEPORT_AUTH="gitlab"
 source $HOME/.zsh/completion.zsh
 source $HOME/.zsh/alias.zsh
 
-
 # Post shell notification
 gecho -e "Run 'okteto context use' if you want to start using okteto"
+gecho -e "Set 'SRC_ACCESS_TOKEN' to use src-cli"

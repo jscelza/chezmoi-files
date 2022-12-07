@@ -48,7 +48,7 @@ wmaurer.change-case
 zxh404.vscode-proto3
 "
     for module in $modules; do
-        code --install-extension "$module" || true
+        code --force --install-extension "$module" || true
     done
 fi
 

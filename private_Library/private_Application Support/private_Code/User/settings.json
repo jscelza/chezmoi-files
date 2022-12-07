@@ -57,5 +57,6 @@
         "!Split",
         "!Split sequence"
     ],
-    "aws.telemetry": false
+    "aws.telemetry": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false
 }
