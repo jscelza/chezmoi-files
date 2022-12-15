@@ -1,11 +1,8 @@
 #!/bin/zsh
 
-# Shell Variables
-export PROJECTS="$HOME/Code"
-
-# Set PATH, MANPATH, etc., for Homebrew.
+# HomeBrew: Set PATH, MANPATH, etc.,
 eval "$(/opt/homebrew/bin/brew shellenv)"
-export EDITOR='vim'
+export EDITOR='nvim'
 export VEDITOR='code'
 
 # Spaceship
@@ -21,8 +18,16 @@ fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 
-# Addtional environment variables
+# bindkey
+bindkey "^A" beginning-of-line
+bindkey "^E" end-of-line
+
+# Environment variables
 export PATH=${HOME}/bin:${PATH}
+export PROJECTS="$HOME/Code"
+
+# fzf completion and binding
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Sourcegraph
 export SRC_ENDPOINT="https://checkr.sourcegraph.com/"

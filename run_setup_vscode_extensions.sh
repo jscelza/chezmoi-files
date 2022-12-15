@@ -31,6 +31,7 @@ misogi.ruby-rubocop
 ms-kubernetes-tools.vscode-kubernetes-tools
 ms-python.python
 ms-python.vscode-pylance
+ms-vscode.makefile-tools
 ms-vscode.test-adapter-converter
 njpwerner.autodocstring
 noku.rails-run-spec-vscode

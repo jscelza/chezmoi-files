@@ -48,7 +48,7 @@ chezmoi update
 1. Update you respected .dotfiles and add files with `chezmoi add <file/dir name>`
 1. Check out your diff `chezmoi diff`
 1. Apply with `chezmoi apply`
-1. Commit your changes to git and push to the respositor
+1. Commit your changes to git and push to the respository
 
 ## Reference
 
@@ -58,3 +58,11 @@ chezmoi update
 * [Brew Bundle Brewfile Tips](https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f)
 * [Oh My Zsh](https://github.com/ohmyzsh)
 * [Spaceship Prompt Configuration](https://spaceship-prompt.sh/config/intro/)
+
+# Improvements/Fixes
+
+* Add ability to download SSH from One Password
+* Add Clean up to ASDF for version not in tools-version file.
+* Set up way to pull tokens from one password
+* okteto completion doesn't seem to work
+* fix terminal bindkey not working (^A, ^E, ^R)

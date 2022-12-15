@@ -50,3 +50,6 @@ kenc() {
 kdec() {
         echo "$@" | base64 -D
 }
+
+# Misc
+alias vi=nvim
