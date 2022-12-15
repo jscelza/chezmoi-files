@@ -61,8 +61,10 @@ chezmoi update
 
 # Improvements/Fixes
 
-* Add ability to download SSH from One Password
-* Add Clean up to ASDF for version not in tools-version file.
-* Set up way to pull tokens from one password
-* okteto completion doesn't seem to work
-* fix terminal bindkey not working (^A, ^E, ^R)
+[X] Fix terminal bindkey not working (^A, ^E, ^R)
+[ ] Add ability to download SSH keys from One Password
+[ ] Fix issie with ASDF installation via tool-verison file
+[ ] Add Clean up to ASDF for version not in tools-version file.
+[ ] Set up way to pull tokens from one password
+[ ] okteto completion doesn't seem to work
+[ ] add docker configuration login and configuration
