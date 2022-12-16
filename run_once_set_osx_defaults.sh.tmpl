@@ -1,5 +1,4 @@
 {{- if eq .chezmoi.os "darwin" -}}
-
 #!/bin/bash
 gecho -e "---- Start of ${TXT_BOLD}OSX Default${TXT_CLEAR} setup ----"
 
@@ -11,6 +10,9 @@ gecho -e "---- Start of ${TXT_BOLD}OSX Default${TXT_CLEAR} setup ----"
 #   https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 # More from:
 #    https://gist.github.com/brandonb927/3195465
+#
+# to reset state of script run:
+#   chezmoi state delete-bucket --bucket=scriptState
 
 # Use AirDrop over every interface. srsly this should be a default.
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
