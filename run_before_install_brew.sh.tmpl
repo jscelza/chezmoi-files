@@ -1,10 +1,14 @@
-#!/bin/sh
-
-{{- if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
-gecho -e "---- Start of ${TXT_BOLD}BREW${TXT_CLEAR} setup ----"
+# {{- if eq .chezmoi.os "darwin" -}}
 
-if [ -e $(which brew) ]; then
+if [ -e "$(which gecho)" ]
+then
+  gecho -e "---- Start of ${TXT_BOLD}BREW${TXT_CLEAR} setup ----"
+else
+  echo "---- First time installing BREW... ----"
+fi
+
+if [ -e "$(which brewe)" ]; then
   echo "brew already installed"
 else
   echo "Brew not found. Installing..."
@@ -13,4 +17,4 @@ fi
 
 brew bundle install -v --no-lock --file {{ joinPath .chezmoi.sourceDir "Brewfile" | quote }}
 gecho -e "---- End of ${TXT_BOLD}BREW${TXT_CLEAR} setup ----"
-{{ end -}}
+# {{ end -}}

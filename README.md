@@ -62,9 +62,12 @@ chezmoi update
 # Improvements/Fixes
 
 [X] Fix terminal bindkey not working (^A, ^E, ^R)
-[ ] Add ability to download SSH keys from One Password
 [X] Fix issue with ASDF installation via tool-verison file
+[ ] Add ability to download SSH keys from One Password
 [ ] Add Clean up to ASDF for version not in tools-version file.
 [ ] Set up way to pull tokens (gitlab * src-cli) from one password
 [ ] okteto completion doesn't seem to work
 [ ] add docker configuration login and configuration
+[ ] Fix issue with gecho being used and not being installed
+[ ] brew check doesn't work on new system
+[ ] Merge more k8s alias

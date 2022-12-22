@@ -49,6 +49,8 @@ export TELEPORT_AUTH="gitlab"
 # zsh
 source $HOME/.zsh/completion.zsh
 source $HOME/.zsh/alias.zsh
+source $HOME/.zsh/alias_k8s.zsh
+
 
 # Post shell notification
 gecho -e "Run 'okteto context use' if you want to start using okteto"
