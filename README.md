@@ -61,13 +61,19 @@ chezmoi update
 
 # Improvements/Fixes
 
-[X] Fix terminal bindkey not working (^A, ^E, ^R)
-[X] Fix issue with ASDF installation via tool-verison file
+* 2022-12-22
+  [X] Merge more k8s alias
+  [X] brew check doesnt work on newly setup system
+* 2022-12-07
+  [X] Fix terminal bindkey not working (^A, ^E, ^R)
+  [X] Fix issue with ASDF installation via tool-verison file
+
+* Still needing fixes
+
 [ ] Add ability to download SSH keys from One Password
+[ ] Change .ssh/config to be partial managed since okteto adds endpoints
 [ ] Add Clean up to ASDF for version not in tools-version file.
 [ ] Set up way to pull tokens (gitlab * src-cli) from one password
-[ ] okteto completion doesn't seem to work
+[ ] okteto completion doesnt seem to work
 [ ] add docker configuration login and configuration
 [ ] Fix issue with gecho being used and not being installed
-[ ] brew check doesn't work on new system
-[ ] Merge more k8s alias
