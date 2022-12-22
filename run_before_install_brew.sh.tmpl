@@ -1,14 +1,10 @@
 #!/bin/bash
-# {{- if eq .chezmoi.os "darwin" -}}
 
-if [ -e "$(which gecho)" ]
-then
-  gecho -e "---- Start of ${TXT_BOLD}BREW${TXT_CLEAR} setup ----"
-else
-  echo "---- First time installing BREW... ----"
-fi
+# {{ if eq .chezmoi.os "darwin" -}}
 
-if [ -e "$(which brewe)" ]; then
+echo "---- Start of BREW setup ----"
+
+if [ -e "$(which brew)" ]; then
   echo "brew already installed"
 else
   echo "Brew not found. Installing..."
