@@ -70,10 +70,15 @@ chezmoi update
 
 * Still needing fixes
 
-[ ] Add ability to download SSH keys from One Password
 [ ] Change .ssh/config to be partial managed since okteto adds endpoints
 [ ] Add Clean up to ASDF for version not in tools-version file.
-[ ] Set up way to pull tokens (gitlab * src-cli) from one password
-[ ] okteto completion doesnt seem to work
-[ ] add docker configuration login and configuration
-[ ] Fix issue with gecho being used and not being installed
+[ ] Set up way to pull tokens/private configuration from OnePassword
+    [ ] GITLAB_ACCESS_TOKEN / GITLAB_TOKEN
+    [ ] SSH keys from One Password
+    [ ] SRC_ACCESS_TOKEN for src-cli
+    [ ] BUNDLE_GEM__FURY__IO for Gem Fury
+    [ ] Docker login for private Images
+[ ] Docker configuration & tuning
+[ ] Okteto completion doesnt seem to work
+[ ] Fix issue with gecho being used and not being installed in pre-brew install
+[ ] Handle `xcode-select --install`
