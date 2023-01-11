@@ -44,7 +44,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://gitlab.com/jeffs-pu
 mkdir ~/bin && sh -c "$(curl -fsLS get.chezmoi.io)" -- -b ~/bin
 export PATH=~/bin:$PATH
 chezmoi update
-``
+```
 1. Update you respected .dotfiles and add files with `chezmoi add <file/dir name>`
 1. Check out your diff `chezmoi diff`
 1. Apply with `chezmoi apply`
