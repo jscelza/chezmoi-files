@@ -61,24 +61,26 @@ chezmoi update
 
 # Improvements/Fixes
 
+## Implemented
+
 * 2022-12-22
-  [X] Merge more k8s alias
-  [X] brew check doesnt work on newly setup system
+  - [X] Merge more k8s alias
+  - [X] brew check doesnt work on newly setup system
 * 2022-12-07
-  [X] Fix terminal bindkey not working (^A, ^E, ^R)
-  [X] Fix issue with ASDF installation via tool-verison file
+  - [X] Fix terminal bindkey not working (^A, ^E, ^R)
+  - [X] Fix issue with ASDF installation via tool-verison file
 
-* Still needing fixes
+## Still needing fixes
 
-[ ] Change .ssh/config to be partial managed since okteto adds endpoints
-[ ] Add Clean up to ASDF for version not in tools-version file.
-[ ] Set up way to pull tokens/private configuration from OnePassword
-    [ ] GITLAB_ACCESS_TOKEN / GITLAB_TOKEN
-    [ ] SSH keys from One Password
-    [ ] SRC_ACCESS_TOKEN for src-cli
-    [ ] BUNDLE_GEM__FURY__IO for Gem Fury
-    [ ] Docker login for private Images
-[ ] Docker configuration & tuning
-[ ] Okteto completion doesnt seem to work
-[ ] Fix issue with gecho being used and not being installed in pre-brew install
-[ ] Handle `xcode-select --install`
+- [ ] Change .ssh/config to be partial managed since okteto adds endpoints
+- [ ] Add Clean up to ASDF for version not in tools-version file.
+- [ ] Set up way to pull tokens/private configuration from OnePassword
+    - [ ] GITLAB_ACCESS_TOKEN / GITLAB_TOKEN
+    - [ ] SSH keys from One Password
+    - [ ] SRC_ACCESS_TOKEN for src-cli
+    - [ ] BUNDLE_GEM__FURY__IO for Gem Fury
+    - [ ] Docker login for private Images
+- [ ] Docker configuration & tuning
+- [ ] Okteto completion doesnt seem to work
+- [ ] Fix issue with gecho being used and not being installed in pre-brew install
+- [ ] Handle `xcode-select --install`
