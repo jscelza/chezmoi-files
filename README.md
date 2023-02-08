@@ -36,7 +36,31 @@ Run the following to install of `chezmoi` and set everything up in a single comm
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://gitlab.com/jeffs-public/chezmoi-files
 ```
 
-### From Scratch or Making changes
+### Setting up 1Password
+In order to set up 1password, the CLI is used to add the account and log you in. In order to do this you will need your `Email`, `Secret`, `password` and an authorization code if you use 2FA.
+
+During setup you will see the following if no account has been setup.
+- Example:
+```bash
+Enter your sign-in address (example.1password.com): subdomain.1password.com
+Enter the email address for your account on subdomain.1password.com: XXXXXXZ@domain.com
+Enter the Secret Key for XXXXXXZ@domain.com on subdomain.1password.com:
+Enter the password for XXXXXXZ@domain.com at subdomain.1password.com:
+Enter your six-digit authentication code: NNNNNN
+Now run 'eval $(op signin)' to sign in.
+# Eval auto runs
+Enter the password for XXXXXXZ@domain.com at subdomain.1password.com:
+```
+> You can `export OP_SH=1passwordShortname` to log in an account beside default.
+
+The following references in 1Password need to be set
+```bash
+"op://Personal/personal1.git.id_rsa/private key"
+"op://Personal/work1.git.id_rsa/private key"
+
+```
+
+## From Scratch or Making changes
 
 > From a terminal
 1. Fun below commands
@@ -68,19 +92,22 @@ chezmoi update
   - [X] brew check doesnt work on newly setup system
 * 2022-12-07
   - [X] Fix terminal bindkey not working (^A, ^E, ^R)
-  - [X] Fix issue with ASDF installation via tool-verison file
+  - [X] Fix issue with ASDF installation via tool-version file
+* 20220-02-07
+  - [X] Fix issue with gecho being used and not being installed in pre-brew install
+  - [ ] Set up way to pull tokens/private configuration from OnePassword
+    - [X] SSH keys from One Password
+  - [X] Change .ssh/config to be partial managed since okteto adds endpoints
 
 ## Still needing fixes
 
-- [ ] Change .ssh/config to be partial managed since okteto adds endpoints
 - [ ] Add Clean up to ASDF for version not in tools-version file.
 - [ ] Set up way to pull tokens/private configuration from OnePassword
     - [ ] GITLAB_ACCESS_TOKEN / GITLAB_TOKEN
-    - [ ] SSH keys from One Password
     - [ ] SRC_ACCESS_TOKEN for src-cli
     - [ ] BUNDLE_GEM__FURY__IO for Gem Fury
     - [ ] Docker login for private Images
 - [ ] Docker configuration & tuning
 - [ ] Okteto completion doesnt seem to work
-- [ ] Fix issue with gecho being used and not being installed in pre-brew install
+- [ ] Kubectl tab completion broken
 - [ ] Handle `xcode-select --install`

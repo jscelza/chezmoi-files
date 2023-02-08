@@ -1,5 +1,5 @@
 diff:
-  exclude: [ "scripts" ]
+  exclude: ["scripts"]
 
 git:
   autoCommit: false

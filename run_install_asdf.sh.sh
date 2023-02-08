@@ -2,7 +2,7 @@
 
 gecho -e "---- Start of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"
 
-if [ -e $(which asdf) ]; then
+if [ -e "$(which asdf)" ]; then
   echo "asdf already installed"
 else
   echo "asdf not found. Installing..."
