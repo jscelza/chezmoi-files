@@ -96,10 +96,11 @@ chezmoi update
 * 2022-12-07
   - [X] Fix terminal bindkey not working (^A, ^E, ^R)
   - [X] Fix issue with ASDF installation via tool-version file
-* 20220-02-07
+* 2023-02-07
   - [X] Fix issue with gecho being used and not being installed in pre-brew install
   - [ ] Set up way to pull tokens/private configuration from OnePassword
     - [X] SSH keys from One Password
+    - [X] Docker login for private Images
   - [X] Change .ssh/config to be partial managed since okteto adds endpoints
   - [X] Okteto file pulled from 1password
   - [X] Docker configuration & tuning
@@ -112,7 +113,6 @@ chezmoi update
     - [ ] GITLAB_ACCESS_TOKEN / GITLAB_TOKEN
     - [ ] SRC_ACCESS_TOKEN for src-cli
     - [ ] BUNDLE_GEM__FURY__IO for Gem Fury
-    - [ ] Docker login for private Images
-- [ ] Okteto completion doesn't seem to work
+- [ ] Okteto tab completion doesn't seem to work
 - [ ] Kubectl tab completion broken
 - [ ] Handle `xcode-select --install`
