@@ -53,12 +53,15 @@ Enter the password for XXXXXXZ@domain.com at subdomain.1password.com:
 ```
 > You can `export OP_SH=1passwordShortname` to log in an account beside default.
 
-The following references in 1Password need to be set
-```bash
-"op://Personal/personal1.git.id_rsa/private key"
-"op://Personal/work1.git.id_rsa/private key"
+The following references in 1Password need to be set in your Personal vault
 
-```
+| Type | Name |
+| ---- | ----------- |
+| Document | "docker.config.json" |
+| Document | "okteto.context" |
+| SSH Key | "personal1.git.id_rsa" |
+| SSH key | "work1.git.id_rsa/" |
+
 
 ## From Scratch or Making changes
 
@@ -98,6 +101,9 @@ chezmoi update
   - [ ] Set up way to pull tokens/private configuration from OnePassword
     - [X] SSH keys from One Password
   - [X] Change .ssh/config to be partial managed since okteto adds endpoints
+  - [X] Okteto file pulled from 1password
+  - [X] Docker configuration & tuning
+
 
 ## Still needing fixes
 
@@ -107,7 +113,6 @@ chezmoi update
     - [ ] SRC_ACCESS_TOKEN for src-cli
     - [ ] BUNDLE_GEM__FURY__IO for Gem Fury
     - [ ] Docker login for private Images
-- [ ] Docker configuration & tuning
-- [ ] Okteto completion doesnt seem to work
+- [ ] Okteto completion doesn't seem to work
 - [ ] Kubectl tab completion broken
 - [ ] Handle `xcode-select --install`
