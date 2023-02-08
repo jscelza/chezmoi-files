@@ -60,8 +60,9 @@ The following references in 1Password need to be set in your Personal vault
 | Document | "docker.config.json" | n/a |
 | Document | "okteto.context" | n/a |
 | Secure Note | "git.config" | email: you@domain.com, name: First Last |
-| SSH Key | "personal1.git.id_rsa" |
-| SSH key | "work1.git.id_rsa/" |
+| Secure Note | "zshrc" | SRC_ENDPOINT: "https://endpoint", TELEPORT_PROXY: "endpoint" |
+| SSH Key | "personal1.git.id_rsa" | n/a |
+| SSH key | "work1.git.id_rsa/" | n/a |
 
 
 > All Items should have a tag of `Setup` for easier look up
