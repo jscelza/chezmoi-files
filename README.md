@@ -55,13 +55,16 @@ Enter the password for XXXXXXZ@domain.com at subdomain.1password.com:
 
 The following references in 1Password need to be set in your Personal vault
 
-| Type | Name |
-| ---- | ----------- |
-| Document | "docker.config.json" |
-| Document | "okteto.context" |
+| Type | Name | Label |
+| ---- | ---- | ---- |
+| Document | "docker.config.json" | n/a |
+| Document | "okteto.context" | n/a |
+| Secure Note | "git.config" | email: you@domain.com, name: First Last |
 | SSH Key | "personal1.git.id_rsa" |
 | SSH key | "work1.git.id_rsa/" |
 
+
+> All Items should have a tag of `Setup` for easier look up
 
 ## From Scratch or Making changes
 

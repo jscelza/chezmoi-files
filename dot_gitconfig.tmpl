@@ -1,6 +1,6 @@
 [user]
-	email = jeffrey.scelza@checkr.com
-	name = Jeff Scelza
+	email = {{ onepasswordRead "op://Personal/git.config/add more/email" }}
+	name = {{ onepasswordRead "op://Personal/git.config/add more/name" }}
 [alias]
     co                  = checkout
     promote             = !$ZSH/bin/git-promote

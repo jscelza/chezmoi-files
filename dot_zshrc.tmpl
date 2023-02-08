@@ -47,10 +47,10 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Sourcegraph
-export SRC_ENDPOINT="https://checkr.sourcegraph.com/"
+export SRC_ENDPOINT={{ onepasswordRead "op://Personal/zshrc/add more/SRC_ENDPOINT" }}
 
 # Teleport
-export TELEPORT_PROXY="heimdallr.checkrhq.net"
+export TELEPORT_PROXY={{ onepasswordRead "op://Personal/zshrc/add more/TELEPORT_PROXY" }}
 export TELEPORT_AUTH="gitlab"
 
 # zsh
