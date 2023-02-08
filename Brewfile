@@ -33,6 +33,7 @@ brew "libpq"
 brew "libsodium"
 brew "lsd"
 brew "mas"
+brew "nvm"
 brew "openssl"
 brew "pstree"
 brew "readline"
@@ -71,7 +72,7 @@ cask "font-fira-mono-nerd-font"
 cask "font-prompt"
 
 # Utils
+cask "1password-cli"
 cask "diffmerge"
 cask "fig"
 cask "gpg-suite"
-
