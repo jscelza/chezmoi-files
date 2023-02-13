@@ -113,6 +113,7 @@ chezmoi update
 ## Still needing fixes
 
 - [ ] Add Clean up to ASDF for version not in tools-version file.
+- [ ] Use Tools version file to install plugins
 - [ ] Set up way to pull tokens/private configuration from OnePassword
     - [ ] GITLAB_ACCESS_TOKEN / GITLAB_TOKEN
     - [ ] SRC_ACCESS_TOKEN for src-cli

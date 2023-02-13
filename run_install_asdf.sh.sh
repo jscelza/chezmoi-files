@@ -6,7 +6,7 @@ if [ -e "$(which asdf)" ]; then
   echo "asdf already installed"
 else
   echo "asdf not found. Installing..."
-  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.1
 fi
 
 # List of plugins cat be found @ https://github.com/asdf-vm/asdf-plugins#plugin-list
