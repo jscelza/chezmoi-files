@@ -2,6 +2,8 @@ Host gitlab.com
   IdentityFile ~/.ssh/personal.git.id_rsa
 Host *.checkrhq.net
   IdentityFile ~/.ssh/work.git.id_rsa
+Host *.checkrhq-staging.net
+  IdentityFile ~/.ssh/work.git.id_rsa
 
 {{- $configPath :=  (joinPath .chezmoi.homeDir "/.ssh/config") }}
 {{ if stat $configPath }}
