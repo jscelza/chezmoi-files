@@ -4,13 +4,13 @@
 
 echo "---- Start of BREW setup ----"
 
-if [ -e "$(which brew)" ]; then
+if [ -e "/opt/homebrew/bin/brew" ]; then
   echo "brew already installed"
 else
   echo "Brew not found. Installing..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-brew bundle install -v --no-lock --file {{ joinPath .chezmoi.sourceDir "Brewfile" | quote }}
-gecho -e "---- End of ${TXT_BOLD}BREW${TXT_CLEAR} setup ----"
+/opt/homebrew/bin/brew bundle install -v --no-lock --file {{ joinPath .chezmoi.sourceDir "Brewfile" | quote }}
+echo -e "---- End of ${TXT_BOLD}BREW${TXT_CLEAR} setup ----"
 # {{ end -}}

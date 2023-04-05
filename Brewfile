@@ -61,7 +61,7 @@ brew "zsh-history-substring-search"
 
 # Desktop applications
 cask "aws-vpn-client"
-cask "docker"
+# cask "docker"
 cask "iterm2"
 cask "visual-studio-code"
 

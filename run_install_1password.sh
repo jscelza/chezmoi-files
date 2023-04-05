@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gecho -e "---- Start of ${TXT_BOLD}1Password${TXT_CLEAR} setup ----"
+echo -e "---- Start of ${TXT_BOLD}1Password${TXT_CLEAR} setup ----"
 
 export OP_SH="${OP_SH:=default}"
 if [ -e "$(which op)" ]; then
@@ -12,7 +12,7 @@ if [ -e "$(which op)" ]; then
     op account add --shorthand "${OP_SH}" --signin
   fi
 else
-  gecho -e "OnePassword CLI not found."
+  echo -e "OnePassword CLI not found."
 fi
 
-gecho -e "---- End of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"
+echo -e "---- End of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"

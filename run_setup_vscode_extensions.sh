@@ -1,6 +1,6 @@
 #!/bin/sh
 
-gecho -e "---- Start of ${TXT_BOLD}VSCode Extensions${TXT_CLEAR} setup ----"
+echo -e "---- Start of ${TXT_BOLD}VSCode Extensions${TXT_CLEAR} setup ----"
 
 if command -v code >/dev/null; then
 
@@ -53,7 +53,7 @@ zxh404.vscode-proto3
     done
 fi
 
-gecho -e "---- Stop of ${TXT_BOLD}VSCode Eztensions${TXT_CLEAR} setup ----"
+echo -e "---- Stop of ${TXT_BOLD}VSCode Eztensions${TXT_CLEAR} setup ----"
 
 # Currently Not Installed
 # liviuschera.noctis
