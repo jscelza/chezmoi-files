@@ -2,6 +2,7 @@ README.md
 Brewfile
 chezmoi.yaml
 *swp
+temp/**
 
 # All private configuration files as to not clutter your home Directory
 configs_*

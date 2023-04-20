@@ -14,21 +14,11 @@ autoload -U promptinit; promptinit
 # prompt spaceship
 
 # ASDF
-. ${HOME}/.asdf/asdf.sh
+. "$HOME/.asdf/asdf.sh"
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
-# short cut command to install new plugins
-asdf_install ()
-{
-    plugin="${1?Usage: ${FUNCNAME[0]} <plugin> [version] [scope]}";
-    version="${2:-latest}";
-    scope="${3:-global}";
-    asdf plugin add "${plugin}";
-    asdf install "${plugin}" "${version}";
-    asdf "${scope}" "${plugin}" "${version}"
-}
 
 # bindkey
 bindkey "^A" beginning-of-line
@@ -65,3 +55,4 @@ gecho -e "Run: 'export BUNDLE_GEM__FURY__IO=' to use GemFury"
 gecho -e "Run: 'eval \$(op signin)' to sign into onepassword"
 
 source /Users/jeff.scelza/.docker/init-zsh.sh || true # Added by Docker Desktop
+

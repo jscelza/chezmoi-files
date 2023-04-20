@@ -29,3 +29,13 @@ fi
 # Misc
 alias vi=nvim
 
+# short cut command to install new plugins
+asdf_install ()
+{
+    plugin="${1?Usage: ${FUNCNAME[0]} <plugin> [version] [scope]}";
+    version="${2:-latest}";
+    scope="${3:-global}";
+    asdf plugin add "${plugin}";
+    asdf install "${plugin}" "${version}";
+    asdf "${scope}" "${plugin}" "${version}"
+}
