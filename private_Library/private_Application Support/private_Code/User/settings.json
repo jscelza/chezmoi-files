@@ -61,5 +61,6 @@
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "[python]": {
         "editor.formatOnType": true
-    }
+    },
+    "window.zoomLevel": 1
 }
