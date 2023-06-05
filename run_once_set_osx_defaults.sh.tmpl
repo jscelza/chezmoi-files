@@ -1,6 +1,6 @@
 {{- if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
-echo -e "---- Start of ${TXT_BOLD}OSX Default${TXT_CLEAR} setup ----"
+gecho -e "---- Start of ${TXT_BOLD}OSX Default${TXT_CLEAR} setup ----"
 
 # Sets reasonable OS X defaults.
 #
@@ -151,6 +151,6 @@ set -e
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister \
   -kill -r -domain local -domain system -domain user
 
-echo -e "---- Stop of ${TXT_BOLD}OSX Default${TXT_CLEAR} setup ----"
+gecho -e "---- Stop of ${TXT_BOLD}OSX Default${TXT_CLEAR} setup ----"
 
 {{ end -}}

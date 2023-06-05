@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 gecho -e "---- Start of ${TXT_BOLD}VSCode Extensions${TXT_CLEAR} setup ----"
 

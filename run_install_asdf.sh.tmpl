@@ -1,7 +1,6 @@
 #!/bin/bash
 
 gecho -e "---- Start of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"
-set -x on
 
 if [ -e "${HOME}/.asdf/asdf.sh" ]; then
   echo "asdf already installed"
@@ -11,10 +10,10 @@ else
 fi
 
 # List of plugins cat be found @ https://github.com/asdf-vm/asdf-plugins#plugin-list
-for PLUGIN in $(awk '{print $1}' < {{ .chezmoi.sourceDir	}}/dot_tool-versions); do
-  asdf plugin-add "${PLUGIN}"
-  # Will install version in the ~/.tools-versions
-  asdf install "${PLUGIN}"
-done
+# for PLUGIN in $(awk '{print $1}' < {{ .chezmoi.sourceDir	}}/dot_tool-versions); do
+#   asdf plugin-add "${PLUGIN}"
+#   # Will install version in the ~/.tools-versions
+#   asdf install "${PLUGIN}"
+# done
 
 gecho -e "---- End of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"
