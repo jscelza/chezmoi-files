@@ -21,8 +21,6 @@ GitLab.gitlab-workflow
 gitpod.gitpod-desktop
 golang.go
 hbenl.vscode-test-explorer
-heptio.jsonnet
-HookyQR.beautify
 iciclesoft.workspacesort
 KevinRose.vsc-python-indent
 magicstack.MagicPython
