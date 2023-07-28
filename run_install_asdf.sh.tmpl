@@ -9,11 +9,11 @@ else
   git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.3
 fi
 
-# List of plugins cat be found @ https://github.com/asdf-vm/asdf-plugins#plugin-list
-# for PLUGIN in $(awk '{print $1}' < {{ .chezmoi.sourceDir	}}/dot_tool-versions); do
-#   asdf plugin-add "${PLUGIN}"
-#   # Will install version in the ~/.tools-versions
-#   asdf install "${PLUGIN}"
-# done
+List of plugins cat be found @ https://github.com/asdf-vm/asdf-plugins#plugin-list
+for PLUGIN in $(awk '{print $1}' < {{ .chezmoi.sourceDir	}}/dot_tool-versions); do
+  asdf plugin-add "${PLUGIN}"
+  # Will install version in the ~/.tools-versions
+  asdf install "${PLUGIN}"
+done
 
 gecho -e "---- End of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"
