@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # HomeBrew: Set PATH, MANPATH, etc.,
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/usr/local/bin/brew shellenv)"
 export PATH="~/.docker/bin:/opt/homebrew/opt/libpq/bin:"${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 export EDITOR='nvim'
