@@ -11,6 +11,6 @@ else
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-/opt/homebrew/bin/brew bundle install -v --no-lock --file {{ joinPath .chezmoi.sourceDir "Brewfile" | quote }}
+/usr/local/bin/brew bundle install -v --no-lock --file {{ joinPath .chezmoi.sourceDir "Brewfile" | quote }}
 echo -e "---- End of ${TXT_BOLD}BREW${TXT_CLEAR} setup ----"
 # {{ end -}}
