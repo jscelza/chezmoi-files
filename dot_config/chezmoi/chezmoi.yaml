@@ -6,6 +6,8 @@ git:
   autoPush: false
 
 scriptEnv:
+  # TODO: Test if the following PATH variable is needed on fresh install
+  # PATH: ${HOME}/.docker/bin:${HOME}/bin:${HOME}/.asdf/shims:${HOME}/.asdf/bin:${HOME}/.docker/bin:/opt/homebrew/opt/libpq/bin:${HOME}/.krew/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:${HOME}/.docker/bin:${HOME}/bin:/opt/homebrew/opt/libpq/bin:${HOME}/.krew/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/opt/fzf/bin
   TXT_BOLD: '\e[1m'
   TXT_CLEAR: '\e[0m'
   TXT_CYAN: '\e[36m'
