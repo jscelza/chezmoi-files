@@ -10,11 +10,18 @@ else
 fi
 
 export ASDF_DIR="$HOME/.asdf"
+ASDF_BIN=~/.asdf/bin
+
 . "$HOME/.asdf/asdf.sh"
 
-echo "Run `asdf update && asdf install` afer this run due to a bug in chezmio not sourcing asdf proprely"
-# asdf update
-# # Leveraging the configuration in file ~/.tool-versions
-# asdf install
+echo "Run 'asdf update && asdf install' afer this run due to a bug in chezmio not sourcing asdf proprely"
 
 gecho -e "---- End of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"
+
+# List of plugins cat be found @ https://github.com/asdf-vm/asdf-plugins#plugin-list
+# for PLUGIN in $(awk '{print $1}' < $HOME/.local/share/chezmoi/dot_tool-versions); do
+#   ${ASDF_BIN}/asdf plugin-add "${PLUGIN}"
+#   # Will install version in the ~/.tools-versions
+#   ${ASDF_BIN}/asdf install "${PLUGIN}"
+# done
+
