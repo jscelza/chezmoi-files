@@ -1,12 +1,12 @@
 # HomeBrew: Set PATH, MANPATH, etc.,
 eval "$(/usr/local/bin/brew shellenv)"
-export PATH="~/.docker/bin:/opt/homebrew/opt/libpq/bin:"${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH="${HOME}/.docker/bin:/opt/homebrew/opt/libpq/bin:${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 export EDITOR='nvim'
 export VEDITOR='code'
 
 # Spaceship
-source ~/.zsh/spaceship/spaceship.zsh
+source ${HOME}/.zsh/spaceship/spaceship.zsh
 fpath=("${HOMEBREW_PREFIX}/share/zsh/site-functions" $fpath)
 autoload -U promptinit; promptinit
 # prompt spaceship
@@ -25,9 +25,6 @@ bindkey "^E" end-of-line
 # Environment variables
 export PATH=${HOME}/bin:${PATH}
 export PROJECTS="$HOME/Code"
-
-# fzf completion and binding
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -53,3 +50,5 @@ gecho -e "Run: 'export BUNDLE_GEM__FURY__IO=' to use GemFury"
 gecho -e "Run: 'eval \$(op signin)' to sign into onepassword"
 
 source /Users/jeff.scelza/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

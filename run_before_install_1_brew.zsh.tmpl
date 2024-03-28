@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # {{ if eq .chezmoi.os "darwin" -}}
 
@@ -12,6 +12,6 @@ else
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-brew bundle install -v --no-lock --file {{ joinPath .chezmoi.sourceDir "Brewfile" | quote }}
+brew bundle install -f -v --no-lock --file {{ joinPath .chezmoi.sourceDir "Brewfile" | quote }}
 gecho -e "---- End of ${TXT_BOLD}BREW${TXT_CLEAR} setup ----"
 # {{ end -}}

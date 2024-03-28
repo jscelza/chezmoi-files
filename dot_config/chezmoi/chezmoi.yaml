@@ -6,7 +6,6 @@ git:
   autoPush: false
 
 scriptEnv:
-  PATH: "~/bin:~/.docker/bin:/opt/homebrew/bin/:/opt/homebrew/opt/libpq/bin:/usr/local/bin:/usr/bin/:$PATH"
   TXT_BOLD: '\e[1m'
   TXT_CLEAR: '\e[0m'
   TXT_CYAN: '\e[36m'

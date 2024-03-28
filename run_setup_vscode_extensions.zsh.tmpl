@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+
+MODULES_FILE={{ joinPath .chezmoi.sourceDir ".chezmoi/data/vscode_extensions.txt" | quote }}
+
+gecho -e "---- Start of ${TXT_BOLD}VSCode Extensions${TXT_CLEAR} setup ----"
+
+if command -v code >/dev/null; then
+  echo "VSCode found"
+
+  while IFS= read -r module; do
+    if ! [[ $module =~ ^# ]]; then
+      code --force --install-extension "$module" || true
+    fi
+  done < "$MODULES_FILE"
+else
+  echo "VSCode not found"
+fi
+
+gecho -e "---- Stop of ${TXT_BOLD}VSCode Extensions${TXT_CLEAR} setup ----"

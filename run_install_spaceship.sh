@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env zsh
 
 gecho -e  "--- Start of ${TXT_BOLD}Spaceship${TXT_CLEAR} setup ----"
 
