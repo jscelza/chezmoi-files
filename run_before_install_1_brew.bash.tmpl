@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# {{ if eq .chezmoi.os "darwin" -}}
+
+echo "---- Start of BREW setup ----"
+BREW_BIN=$(which brew)
+
+if [ -e "${BREW_BIN}" ]; then
+  echo "brew already installed"
+else
+  echo "Brew not found. Installing..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+brew bundle install -v --no-lock --file {{ joinPath .chezmoi.sourceDir "Brewfile" | quote }}
+gecho -e "---- End of ${TXT_BOLD}BREW${TXT_CLEAR} setup ----"
+# {{ end -}}

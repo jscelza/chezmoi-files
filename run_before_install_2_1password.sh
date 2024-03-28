@@ -3,7 +3,8 @@
 gecho -e "---- Start of ${TXT_BOLD}1Password${TXT_CLEAR} setup ----"
 
 export OP_SH="${OP_SH:=default}"
-if [ -e "/usr/local/bin/op" ]; then
+OP_BIN=$(which op)
+if [ -e "${OP_BIN}" ]; then
   if op account list | grep -q "${OP_SH}"; then
 
     echo "Account found. Signing into 1password with shortname  ${OP_SH}"
