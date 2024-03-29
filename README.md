@@ -92,32 +92,6 @@ chezmoi update
 
 # Improvements/Fixes
 
-## Implemented
-
-* 2022-12-22
-  - Merge more k8s alias
-  - brew check doesnt work on newly setup system
-* 2022-12-07
-  - Fix terminal bindkey not working (^A, ^E, ^R)
-  - Fix issue with ASDF installation via tool-version file
-* 2023-02-07
-  - Fix issue with gecho being used and not being installed in pre-brew install
-  - Set up way to pull tokens/private configuration from OnePassword
-    - SSH keys from One Password
-    - Docker login for private Images
-  - Change .ssh/config to be partial managed since okteto adds endpoints
-  - Okteto file pulled from 1password
-  - Docker configuration & tuning
-* 2024-03-28
-  - Setup `asdf`'s `.tool-versions file to install/update plugins
-  - Updated to latest working configuration
-  - Fixed issue with PATH
-  - Migrated `spaceship-prompt` setup to `Brewfile`
-  - Added script to install `docker`
-  - Fix issue with different `HOMEBREW_PREFIX` values
-
-## Still needing fixes/Improve
-
 - [ ] Add Clean up to ASDF for version not in tools-version file.
 - [ ] Set up tokens/private configuration from OnePassword
     - [ ] GITLAB_ACCESS_TOKEN / GITLAB_TOKEN
