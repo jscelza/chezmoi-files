@@ -8,7 +8,7 @@ Below's diagram shows the structure of how resources are installed and configure
     ├── asdf
     │   ├── K8s tools (kubectx, kubens)
     │   ├── Lanaguages (ruby, golang, python, node, etc)
-    │   ├── Tools (okteto, teleport, terraform, terragrunt, vault)
+    │   ├── Tools (teleport, terraform, terragrunt, vault)
     │   ├── Utilies (jq, awscli, istioctl)
     ├── brew
     │   ├── CLI Not support by asdf
@@ -23,7 +23,8 @@ Below's diagram shows the structure of how resources are installed and configure
     │   ├── Spaceship (.spaceshiprc.zsh) # moved to .config
     │   └── Zsh (.zprofile, .zshrc)
     └── Directories
-       └── ~/code
+       └── ~/code/work
+       └── ~/temp
 ```
 
 ## Getting started
@@ -57,12 +58,10 @@ The following references in 1Password need to be set in your Personal vault
 
 | Type | Name | Label |
 | ---- | ---- | ---- |
-| Document | "docker.config.json" | n/a |
-| Document | "okteto.context" | n/a |
 | Secure Note | "git.config" | email: you@domain.com, name: First Last |
 | Secure Note | "zshrc" | SRC_ENDPOINT: "https://endpoint", TELEPORT_PROXY: "endpoint" |
 | SSH Key | "personal1.git.id_rsa" | n/a |
-| SSH key | "work1.git.id_rsa/" | n/a |
+| SSH key | "work1.git.id_rsa" | n/a |
 
 
 > All Items should have a tag of `Setup` for easier look up
