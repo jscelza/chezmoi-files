@@ -1,0 +1,10 @@
+{
+  "auths": {
+    "checkrawsuseast1-docker-hub.jfrog.io": {},
+    "docker-registry.checkrhq.net": {},
+    "docker.artifactory.checkrhq.net": {},
+    "gitlab-registry.checkrhq.net": {}
+  },
+  "credsStore": "desktop",
+  "currentContext": "desktop-linux"
+}

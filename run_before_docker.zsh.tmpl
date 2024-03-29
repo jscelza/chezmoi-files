@@ -1,0 +1,24 @@
+#!/usr/bin/env zsh
+
+gecho -e "---- Start of ${TXT_BOLD}Docker${TXT_CLEAR} setup ----"
+
+export DL_FILE=$HOME/Download/Docker.dmg
+
+{{- if eq .chezmoi.arch "amd64" -}}
+DL_URL=https://desktop.docker.com/mac/main/amd64/Docker.dmg
+{{ else }}
+DL_URL=https://desktop.docker.com/mac/main/arm64/Docker.dmg
+{{ end}}
+
+if command -v docker >/dev/null; then
+  echo "Docker found. No install needed"
+else
+  wget ${DL_URL} -o ${DL_FILE}
+  echo "Docker not found! Performing installation"
+  sudo hdiutil attach ${DL_FILE}
+  sudo /Volumes/Docker/Docker.app/Contents/MacOS/install
+  sudo hdiutil detach /Volumes/Docker
+  rm -f ${DL_FILE}
+fi
+
+gecho -e "---- Stop of ${TXT_BOLD}Docker${TXT_CLEAR} setup ----"

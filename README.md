@@ -95,29 +95,33 @@ chezmoi update
 ## Implemented
 
 * 2022-12-22
-  - [X] Merge more k8s alias
-  - [X] brew check doesnt work on newly setup system
+  - Merge more k8s alias
+  - brew check doesnt work on newly setup system
 * 2022-12-07
-  - [X] Fix terminal bindkey not working (^A, ^E, ^R)
-  - [X] Fix issue with ASDF installation via tool-version file
+  - Fix terminal bindkey not working (^A, ^E, ^R)
+  - Fix issue with ASDF installation via tool-version file
 * 2023-02-07
-  - [X] Fix issue with gecho being used and not being installed in pre-brew install
-  - [ ] Set up way to pull tokens/private configuration from OnePassword
-    - [X] SSH keys from One Password
-    - [X] Docker login for private Images
-  - [X] Change .ssh/config to be partial managed since okteto adds endpoints
-  - [X] Okteto file pulled from 1password
-  - [X] Docker configuration & tuning
+  - Fix issue with gecho being used and not being installed in pre-brew install
+  - Set up way to pull tokens/private configuration from OnePassword
+    - SSH keys from One Password
+    - Docker login for private Images
+  - Change .ssh/config to be partial managed since okteto adds endpoints
+  - Okteto file pulled from 1password
+  - Docker configuration & tuning
+* 2024-03-28
+  - Setup `asdf`'s `.tool-versions file to install/update plugins
+  - Updated to latest working configuration
+  - Fixed issue with PATH
+  - Migrated `spaceship-prompt` setup to `Brewfile`
+  - Added script to install `docker`
+  - Fix issue with different `HOMEBREW_PREFIX` values
 
-
-## Still needing fixes
+## Still needing fixes/Improve
 
 - [ ] Add Clean up to ASDF for version not in tools-version file.
-- [ ] Use Tools version file to install plugins
-- [ ] Set up way to pull tokens/private configuration from OnePassword
+- [ ] Set up tokens/private configuration from OnePassword
     - [ ] GITLAB_ACCESS_TOKEN / GITLAB_TOKEN
     - [ ] SRC_ACCESS_TOKEN for src-cli
     - [ ] BUNDLE_GEM__FURY__IO for Gem Fury
-- [ ] Okteto tab completion doesn't seem to work
 - [ ] Kubectl tab completion broken
 - [ ] Handle `xcode-select --install`
