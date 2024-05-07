@@ -63,5 +63,6 @@
     "editor.formatOnType": true
   },
   "window.zoomLevel": 1,
-  "http.proxyStrictSSL": false
+  "http.proxyStrictSSL": false,
+  "workbench.sideBar.location": "right"
 }
