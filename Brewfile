@@ -5,7 +5,6 @@ cask_args appdir: '/Applications'
 # ------------------------------------------------------------------------------
 tap "homebrew/bundle"
 tap "buo/cask-upgrade"
-tap "homebrew/cask-fonts"
 
 # ------------------------------------------------------------------------------
 # CLI Tools
@@ -36,7 +35,7 @@ brew "libsodium"
 brew "lsd"
 brew "m4"
 brew "mas"
-brew "nvm"
+# brew "nvm"
 brew "openssl"
 brew "pstree"
 brew "readline"
