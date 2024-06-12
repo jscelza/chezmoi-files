@@ -13,5 +13,5 @@ else
 fi
 
 brew bundle install -f -v --no-lock --file {{ joinPath .chezmoi.sourceDir "Brewfile" | quote }}
-gecho -e "---- End of ${TXT_BOLD}BREW${TXT_CLEAR} setup ----"
+echo -e "---- End of BREW setup ----"
 # {{ end -}}

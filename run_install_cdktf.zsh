@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-gecho -e "---- Start of ${TXT_BOLD}CDKTF${TXT_CLEAR} setup ----"
+echo -e "---- Start of CDKTF setup ----"
 
 if command -v cdktf &> /dev/null; then
   echo "CDKTF already installed."
@@ -14,4 +14,4 @@ cdktf --version 2> /dev/null
 
 echo "Run `cdktf init --template=typescript --local` to create a new project."
 
-gecho -e "---- End of ${TXT_BOLD}1Password${TXT_CLEAR} setup ----"
+echo -e "---- End of 1Password setup ----"

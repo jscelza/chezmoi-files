@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 # https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 
-gecho -e  "--- Start of ${TXT_BOLD}Krew${TXT_CLEAR} setup ----"
+echo -e  "--- Start of Krew setup ----"
 
 (
   cd "$(mktemp -d)" &&
@@ -22,4 +22,4 @@ else
   echo "kubectl plugin not installed"
 fi
 
-gecho -e "---- End of ${TXT_BOLD}Krew${TXT_CLEAR} setup ----"
+echo -e "---- End of Krew setup ----"

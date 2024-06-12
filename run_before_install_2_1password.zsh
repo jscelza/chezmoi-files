@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-gecho -e "---- Start of ${TXT_BOLD}1Password${TXT_CLEAR} setup ----"
+echo -e "---- Start of 1Password setup ----"
 
 export OP_SH="${OP_SH:=default}"
 OP_BIN=$(which op)
@@ -15,4 +15,4 @@ else
   echo -e "OnePassword CLI not found."
 fi
 
-gecho -e "---- End of ${TXT_BOLD}1Password${TXT_CLEAR} setup ----"
+echo -e "---- End of 1Password setup ----"

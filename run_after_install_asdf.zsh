@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-gecho -e "---- Start of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"
+echo -e "---- Start of ASDF setup ----"
 
 if [ -e "${HOME}/.asdf/asdf.sh" ]; then
   echo "asdf already installed"
@@ -20,5 +20,5 @@ asdf update && asdf install
 #asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 #asdf plugin-add yarn
 #asdf plugin-add pnpm
-gecho -e "---- End of ${TXT_BOLD}ASDF${TXT_CLEAR} setup ----"
+echo -e "---- End of ASDF setup ----"
 

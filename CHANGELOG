@@ -8,7 +8,7 @@
 - Added `kubectl krew`  plugins
 
 # 2023-02-07
-- Fix issue with gecho being used and not being installed in pre-brew install
+- Fix issue with echo being used and not being installed in pre-brew install
 - Set up way to pull tokens/private configuration from OnePassword
   - SSH keys from One Password
   - Docker login for private Images

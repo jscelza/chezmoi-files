@@ -2,7 +2,7 @@
 
 MODULES_FILE={{ joinPath .chezmoi.sourceDir ".chezmoi/data/vscode_extensions.txt" | quote }}
 
-gecho -e "---- Start of ${TXT_BOLD}VSCode Extensions${TXT_CLEAR} setup ----"
+echo -e "---- Start of VSCode Extensions setup ----"
 
 if command -v code >/dev/null; then
   echo "VSCode found"
@@ -16,4 +16,4 @@ else
   echo "VSCode not found"
 fi
 
-gecho -e "---- Stop of ${TXT_BOLD}VSCode Extensions${TXT_CLEAR} setup ----"
+echo -e "---- Stop of VSCode Extensions setup ----"

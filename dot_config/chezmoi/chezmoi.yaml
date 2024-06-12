@@ -12,5 +12,5 @@ scriptEnv:
   TXT_CLEAR: '\e[0m'
   TXT_CYAN: '\e[36m'
   TXT_RED: '\e[31m'
-  TXT_BC: "${TXT_BOLD}${TXT_CYAN}"
-  TXT_BR: "${TXT_BOLD}${TXT_RED}"
+  TXT_BC: "${TXT_CYAN}"
+  TXT_BR: "${TXT_RED}"

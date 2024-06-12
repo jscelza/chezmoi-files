@@ -44,7 +44,7 @@ In order to set up 1password, the CLI is used to add the account and log you in.
 During setup you will see the following if no account has been setup.
 - Example:
 ```bash
-Enter your sign-in address (example.1password.com): subdomain.1password.com
+Enter your sign-in address (example.1password.com): my.1password.com
 Enter the email address for your account on subdomain.1password.com: XXXXXXZ@domain.com
 Enter the Secret Key for XXXXXXZ@domain.com on subdomain.1password.com:
 Enter the password for XXXXXXZ@domain.com at subdomain.1password.com:
@@ -92,6 +92,7 @@ chezmoi update
 
 # Improvements/Fixes
 
+- [ ] Fix Issue with fresh install not setting path correctly with brew installation.
 - [ ] Add Clean up to ASDF for version not in tools-version file.
 - [ ] Set up tokens/private configuration from OnePassword
     - [ ] GITLAB_ACCESS_TOKEN / GITLAB_TOKEN
