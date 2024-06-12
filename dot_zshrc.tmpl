@@ -1,5 +1,9 @@
 # HomeBrew: Set PATH, MANPATH, etc.,
+{{ if ("/usr/local/bin/brew" | lstat) }}
 eval "$(/usr/local/bin/brew shellenv)"
+{{ else }}
+eval "$(/opt/homebrew/bin/brew shellenv)"
+{{ end }}
 export PATH="${HOME}/.docker/bin:/opt/homebrew/opt/libpq/bin:${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 export EDITOR='nvim'
