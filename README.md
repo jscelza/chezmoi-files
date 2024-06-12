@@ -34,6 +34,7 @@ Run the following to install of `chezmoi` and set everything up in a single comm
 
 > From a terminal
 ```bash
+xcode-select --install
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://gitlab.com/jeffs-public/chezmoi-files
 ```
 
