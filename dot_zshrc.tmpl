@@ -10,7 +10,12 @@ export EDITOR='nvim'
 export VEDITOR='code'
 
 # Spaceship
+{{ if ("/usr/local/opt/spaceship-prompt/spaceship.zsh" | lstat) }}
+source /usr/local/opt/spaceship-prompt/spaceship.zsh
+{{ else }}
 source ${HOME}/.zsh/spaceship/spaceship.zsh
+{{ end }}
+
 fpath=("${HOMEBREW_PREFIX}/share/zsh/site-functions" $fpath)
 autoload -U promptinit; promptinit
 # prompt spaceship
