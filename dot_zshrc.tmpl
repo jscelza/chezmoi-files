@@ -10,10 +10,10 @@ export EDITOR='nvim'
 export VEDITOR='code'
 
 # Spaceship
-{{ if ("/usr/local/opt/spaceship-prompt/spaceship.zsh" | lstat) }}
-source /usr/local/opt/spaceship-prompt/spaceship.zsh
+{{ if ("/opt/homebrew/opt/spaceship/spaceship.zsh" | lstat) }}
+source /opt/homebrew/opt/spaceship/spaceship.zsh
 {{ else }}
-source ${HOME}/.zsh/spaceship/spaceship.zsh
+source ${HOME}/.zsh/spaceship/spaceship.zshTa
 {{ end }}
 
 fpath=("${HOMEBREW_PREFIX}/share/zsh/site-functions" $fpath)
@@ -39,10 +39,5 @@ export PROJECTS="$HOME/Code"
 source $HOME/.zsh/completion.zsh
 source $HOME/.zsh/alias.zsh
 source $HOME/.zsh/alias_k8s.zsh
-
-# Post shell notification
-echo -e "Run: 'export SRC_ACCESS_TOKEN=' to use src-cli"
-echo -e "Run: 'export BUNDLE_GEM__FURY__IO=' to use GemFury"
-echo -e "Run: 'eval \$(op signin)' to sign into onepassword"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

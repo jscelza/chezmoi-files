@@ -92,6 +92,8 @@ chezmoi update
 
 # Improvements/Fixes
 
+- Fix issue with older machine that don't leverage /opt/homebrew directory
+- [ ] Determine issue with docker install on fresh Mac
 - [ ] Fix Issue with fresh install not setting path correctly with brew installation.
 - [ ] Add Clean up to ASDF for version not in tools-version file.
 - [ ] Set up tokens/private configuration from OnePassword
