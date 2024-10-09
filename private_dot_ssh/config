@@ -1,8 +1,4 @@
 Host gitlab.com
   IdentityFile ~/.ssh/personal.git.id_rsa
 Host github.com
-  IdentityFile ~/.ssh/id_ed25519
-Host *.checkrhq.net
-  IdentityFile ~/.ssh/work.git.id_rsa
-Host *.checkrhq-staging.net
   IdentityFile ~/.ssh/work.git.id_rsa
