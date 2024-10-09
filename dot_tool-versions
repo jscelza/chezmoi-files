@@ -1,15 +1,15 @@
-# List of plugins cat be found @ https://github.com/asdf-vm/asdf-plugins#plugin-list
 awscli latest
-dynatrace-monaco latest
+# dynatrace-monaco latest
 helm latest
 jq latest
+golang 1.22.4
+golangci-lint 1.59.1
 kubectl latest
 kubectx latest
 nodejs latest
 pnpm latest
-python latest 3.11.0
-terraform latest
-terraform-ls latest
-terragrunt latest
+python 3.12.4
+# terraform latest
+# terraform-ls latest
+# terragrunt latest
 yarn latest
-

@@ -9,9 +9,7 @@ else
   git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
 fi
 
-export ASDF_DIR="$HOME/.asdf"
-. "$HOME/.asdf/asdf.sh"
-asdf update && asdf install
+SCRIPT_DIR=$(pwd)
 
 while IFS= read -r line; do
   if [[ "$line" =~ ^# ]]; then
@@ -20,7 +18,11 @@ while IFS= read -r line; do
 
   plugin_name=$(echo "$line" | awk '{print $1}')
   asdf plugin add "$plugin_name"
-done < ./dot_tool-versions
+done < ${SCRIPT_DIR}/.tool-versions
+
+export ASDF_DIR="$HOME/.asdf"
+. "$HOME/.asdf/asdf.sh"
+asdf update && asdf install
 
 echo -e "---- End of ASDF setup ----"
 

@@ -10,8 +10,8 @@ export EDITOR='nvim'
 export VEDITOR='code'
 
 # Spaceship
-{{ if ("/opt/homebrew/opt/spaceship/spaceship.zsh" | lstat) }}
-source /opt/homebrew/opt/spaceship/spaceship.zsh
+{{ if ("/usr/local/opt/spaceship-prompt/spaceship.zsh" | lstat) }}
+source /usr/local/opt/spaceship-prompt/spaceship.zsh
 {{ else }}
 source ${HOME}/.zsh/spaceship/spaceship.zshTa
 {{ end }}
@@ -26,6 +26,8 @@ autoload -U promptinit; promptinit
 fpath=("${ASDF_DIR}/completions" $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
+# set up GoLang installed by ASDF
+. ~/.asdf/plugins/golang/set-env.zsh
 
 # bindkey
 bindkey "^A" beginning-of-line
@@ -40,4 +42,10 @@ source $HOME/.zsh/completion.zsh
 source $HOME/.zsh/alias.zsh
 source $HOME/.zsh/alias_k8s.zsh
 
+# Post shell notification
+echo -e "Run: 'export SRC_ACCESS_TOKEN=' to use src-cli"
+echo -e "Run: 'export BUNDLE_GEM__FURY__IO=' to use GemFury"
+echo -e "Run: 'eval \$(op signin)' to sign into onepassword"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

@@ -64,5 +64,6 @@
   },
   "window.zoomLevel": 1,
   "http.proxyStrictSSL": false,
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "cloudcode.duetAI.project": "homeproject-426707"
 }
