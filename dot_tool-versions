@@ -1,15 +1,12 @@
 awscli latest
-# dynatrace-monaco latest
 helm latest
 jq latest
 golang 1.22.4
 golangci-lint 1.59.1
 kubectl latest
 kubectx latest
+neovim 0.8.2
 nodejs latest
 pnpm latest
 python 3.12.4
-# terraform latest
-# terraform-ls latest
-# terragrunt latest
 yarn latest

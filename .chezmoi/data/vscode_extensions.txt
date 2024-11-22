@@ -5,17 +5,26 @@ ban.spellright
 #batisteo.vscode-django
 codezombiech.gitignore
 # connorshea.vscode-ruby-test-adapter
-# datadog.datadog-vscode
 donjayamanne.python-environment-manager
 donjayamanne.python-extension-pack
+dynatrace.dynatrace-apps
+dynatrace.dynatrace-debugging-extension
+dynatraceplatformextensions.dynatrace-extensions
 editorconfig.editorconfig
+enkia.tokyo-night
 github.copilot
 github.copilot-chat
 gitpod.gitpod-desktop
 golang.go
+googlecloudtools.cloudcode
 hbenl.vscode-test-explorer
 iciclesoft.workspacesort
+jasonnutter.vscode-codeowners
+jinliming2.vscode-go-template
+jwsandeman.cyberpunk2077-theme
+kevinrose.vsc-python-indent
 magicstack.magicpython
+mechatroner.rainbow-csv
 mikestead.dotenv
 #misogi.ruby-rubocop
 ms-kubernetes-tools.vscode-kubernetes-tools
@@ -24,12 +33,18 @@ ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance
 #noku.rails-run-spec-vscode
+ms-vscode-remote.remote-containers
+ms-vscode.makefile-tools
+ms-vscode.test-adapter-converter
+njpwerner.autodocstring
 patbenatar.advanced-new-file
+patricklee.vsnotes
 pnp.polacode
 redhat.vscode-yaml
 shardulm94.trailing-spaces
 #sporto.rails-go-to-spec
 timonwong.shellcheck
+uloco.theme-bluloco-light
 visualstudioexptteam.intellicode-api-usage-examples
 visualstudioexptteam.vscodeintellicode
 wmaurer.change-case

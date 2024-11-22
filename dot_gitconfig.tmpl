@@ -1,6 +1,6 @@
 [user]
-	email = {{ onepasswordRead "op://Personal/git.config/add more/email" }}
-	name = {{ onepasswordRead "op://Personal/git.config/add more/name" }}
+	  email = {{ onepasswordRead "op://Personal/git.config/add more/email" }}
+	  name = {{ onepasswordRead "op://Personal/git.config/add more/name" }}
 [alias]
     co                  = checkout
     promote             = !$ZSH/bin/git-promote
@@ -44,13 +44,19 @@
     lineNumber   = true
 [help]
     autocorrect = 1
+[init]
+	defaultBranch = main
 [merge]
     tool = diffmerge
 [mergetool "diffmerge"]
     cmd           = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
     trustExitCode = true
     keepBackup    = false
+[pull]
+    rebase = true
 [push]
     default = simple
-[init]
-	defaultBranch = main
+[rebase]
+    autoStash = true
+    instructionFormat = "%an <%ae> - %s"
+    missingCommitsCheck = error

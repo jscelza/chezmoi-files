@@ -5,7 +5,7 @@ cask_args appdir: '/Applications'
 # ------------------------------------------------------------------------------
 tap "homebrew/bundle"
 tap "buo/cask-upgrade"
-
+tap "hashicorp/tap"
 # ------------------------------------------------------------------------------
 # CLI Tools
 # ------------------------------------------------------------------------------
@@ -27,6 +27,7 @@ brew "gnu-indent"
 brew "gnu-getopt"
 brew "gnutls"
 brew "grpcui"
+brew "hashicorp/tap/terraform"
 brew "htop"
 brew "hub"
 brew "jid"
@@ -41,8 +42,9 @@ brew "pstree"
 brew "readline"
 brew "spaceship"
 brew "sqlite3"
-brew "sourcegraph/src-cli/src-cli"
+# brew "sourcegraph/src-cli/src-cli"
 brew "telnet"
+brew "terragrunt"
 brew "terminal-notifier"
 brew "tldr"
 brew "tree"

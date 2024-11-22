@@ -10,11 +10,7 @@ export EDITOR='nvim'
 export VEDITOR='code'
 
 # Spaceship
-{{ if ("/usr/local/opt/spaceship-prompt/spaceship.zsh" | lstat) }}
-source /usr/local/opt/spaceship-prompt/spaceship.zsh
-{{ else }}
-source ${HOME}/.zsh/spaceship/spaceship.zshTa
-{{ end }}
+source $(brew --prefix)/opt/spaceship/spaceship.zsh
 
 fpath=("${HOMEBREW_PREFIX}/share/zsh/site-functions" $fpath)
 autoload -U promptinit; promptinit
@@ -43,9 +39,10 @@ source $HOME/.zsh/alias.zsh
 source $HOME/.zsh/alias_k8s.zsh
 
 # Post shell notification
-echo -e "Run: 'export SRC_ACCESS_TOKEN=' to use src-cli"
-echo -e "Run: 'export BUNDLE_GEM__FURY__IO=' to use GemFury"
 echo -e "Run: 'eval \$(op signin)' to sign into onepassword"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+complete -o nospace -C /opt/homebrew/bin/terragrunt terragrunt
