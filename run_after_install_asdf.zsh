@@ -1,15 +1,18 @@
 #!/usr/bin/env zsh
 
 echo -e "---- Start of ASDF setup ----"
+SCRIPT_DIR=$(pwd)
+ASDF_VERSION=v0.16.0
+TARGET_FILE=~/bin/asdf.tar.gz
 
-if [ -e "${HOME}/.asdf/asdf.sh" ]; then
+if [ -e "${HOME}/bin/asdf" ]; then
   echo "asdf already installed"
 else
-  echo "asdf not found. Installing..."
-  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
+  echo "asdf not found. Obtaining from Github Releases..."
+  wget -O ${TARGET_FILE} https://github.com/asdf-vm/asdf/releases/download/${ASDF_VERSION}/asdf-${ASDF_VERSION}-darwin-arm64.tar.gz
+  tar -xvzf ${TARGET_FILE} -C ${HOME}/bin
+  rm -f ${TARGET_FILE}
 fi
-
-SCRIPT_DIR=$(pwd)
 
 while IFS= read -r line; do
   if [[ "$line" =~ ^# ]]; then
@@ -20,9 +23,7 @@ while IFS= read -r line; do
   asdf plugin add "$plugin_name"
 done < ${SCRIPT_DIR}/.tool-versions
 
-export ASDF_DIR="$HOME/.asdf"
-. "$HOME/.asdf/asdf.sh"
-asdf update && asdf install
 
+asdf install
 echo -e "---- End of ASDF setup ----"
 

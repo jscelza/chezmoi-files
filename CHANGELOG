@@ -1,3 +1,7 @@
+# 2024-02-01
+- Migrated from bash to go binary version of `asdf`
+- Migrated any secrets to a `Chezmoi` Vault
+
 # 2024-03-28
 - Setup `asdf`'s `.tool-versions file to install/update plugins
 - Updated to latest working configuration
